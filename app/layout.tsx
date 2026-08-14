@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "George Prior - MEng Aerospace Engineer,
+  title: "George Prior - MEng Aerospace Engineer & Automation Specialist",
   description: "Portfolio of George Prior - MEng Aerospace Engineering, embedded systems, smart home automation",
 };
 
