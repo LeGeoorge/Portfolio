@@ -6,34 +6,13 @@ export default function Home() {
       <div className="scanlines"></div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-black/90 border-b-2 border-green-400 p-4 z-50">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold glow">GEORGEPRIOR.INFO</h1>
-          <ul className="flex gap-8 text-sm font-mono list-none">
-            <li>
-              <a href="#about" className="hover:glow">
-                [ABOUT]
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:glow">
-                [PROJECTS]
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:glow">
-                [CONTACT]
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      
 
-      {/* Hero Section */}
+      {/* Top Section */}
       <section className="pt-40 pb-20 px-4 relative z-10">
         
-
-          
+		  <p style={{fontSize: '2rem', textAlign: 'center', padding: '1rem', marginBottom: '-2.5rem'}} className="text-2xl font-bold text-green-400">HIRE</p>	
+          <p style={{fontSize: '6rem', textAlign: 'center'}} className="text-2xl font-bold text-green-400">GEORGE PRIOR</p>
 
           
 
@@ -59,7 +38,7 @@ export default function Home() {
                   <p className="text-green-400/70 text-sm">
                     MEng Aerospace Engineering from UWE Bristol.
                   </p>
-                  <p className="text-green-400/70 whitespace-nowrap !text-xs">Graduated June 2026 with merit</p>
+                  <p style={{marginRight: '0.7rem'}}className="text-green-400/70 whitespace-nowrap !text-xs">Graduated June 2026 with merit</p>
                 </div>
                 <p>
                   Specialization in automation, 
@@ -124,7 +103,7 @@ export default function Home() {
 			<div className="code-block mb-4">
                 <p><u><b>PERFORMANCE RESULTS</b></u></p>
                 <p className="mt-2">Angular Resolution: 1° ✓ (Target: 1°)</p>
-                <p>Positional Accuracy: validated at ±0.5° (Target: ±0.3° - required higher resolution testing method)</p>
+                <p>Positional Accuracy: validated at ±0.5° (Target: ±0.3° - required higher resolution testing method to verify)</p>
                 <p>Operating Range: 360° ✓ (Target: 360°)</p>
                 <p>Max Speed: 20°/s ✓ (Target: ≤10°/s) [EXCEEDED]</p>
                 <p>Wireless Control: Implemented ✓</p>
@@ -215,7 +194,7 @@ export default function Home() {
           <h3 className="section-title">CONTACT</h3>
 
           <div className="code-block mb-8 max-w-2xl mx-auto">
-            <p>Seeking graduate roles in any discipline</p>
+            <p>Seeking graduate roles in any Engineering discipline</p>
 			<p className="mt-4">Location: Cardiff, Wales</p>           
 			<p>Email: george.prior00@gmail.com</p>
 			<p>Phone: +44 7487 598334</p>
