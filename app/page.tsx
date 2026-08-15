@@ -9,7 +9,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-black/90 border-b-2 border-green-400 p-4 z-50">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold glow">GEORGEPRIOR.INFO</h1>
-          <ul className="flex gap-8 text-sm font-mono">
+          <ul className="flex gap-8 text-sm font-mono list-none">
             <li>
               <a href="#about" className="hover:glow">
                 [ABOUT]
@@ -38,7 +38,7 @@ export default function Home() {
           
 
           <div className="flex gap-4 justify-center">
-            <a href="#projects" className="neon-btn-filled">
+            <a href="#projects" className="neon-btn">
               VIEW PROJECTS
             </a>
             <a href="https://github.com/LeGeoorge" target="_blank" rel="noopener noreferrer" className="neon-btn">
@@ -120,6 +120,10 @@ export default function Home() {
 
               <a href="https://github.com/LeGeoorge/Wind-Tunnel-Turntable_Project" className="text-green-400 hover:glow text-sm font-mono">
                 [GIT REPO]
+              </a>
+			  
+			  <a href="/capstone report" target="_blank" className="text-green-400 hover:glow text-sm font-mono">
+                [FULL REPORT]
               </a>
             </div>
 
