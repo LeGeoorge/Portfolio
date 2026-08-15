@@ -122,7 +122,7 @@ export default function Home() {
                 [GIT REPO]
               </a>
 			  
-			  <a href="/capstone report" target="_blank" className="text-green-400 hover:glow text-sm font-mono">
+			  <a href="/reports/capstone report" target="_blank" className="text-green-400 hover:glow text-sm font-mono">
                 [FULL REPORT]
               </a>
             </div>
