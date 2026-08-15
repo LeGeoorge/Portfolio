@@ -47,21 +47,27 @@ export default function Home() {
           </div>
       </section>
 
-      {/* About Section */}
+{/* About Section */}
       <section id="about" className="py-20 px-4 relative z-10 border-t-2 border-green-400">
         <div className="max-w-6xl mx-auto">
-         
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="terminal-card">
-              <p className="text-green-400 font-bold mb-4">[EDUCATION]</p>
-              <p className="text-green-300 leading-relaxed">
-                MEng Aerospace Engineering from UWE Bristol. Specialization in automation, 
-                control systems, and embedded firmware development. Strong background in 
-                aerodynamics, mechanical design and LEAN methodology.
-              </p>
+              <div>
+                <h4 className="text-2xl font-bold text-green-400">[EDUCATION]</h4>
+                <div className="flex justify-between items-start mb-2 gap-4">
+                  <p className="text-green-400/70 text-sm">
+                    MEng Aerospace Engineering from UWE Bristol.
+                  </p>
+                  <p className="text-green-400/70 whitespace-nowrap !text-xs">Graduated June 2026 with merit</p>
+                </div>
+                <p>
+                  Specialization in automation, 
+                  control systems, and embedded firmware development. Strong background in 
+                  aerodynamics, mechanical design and LEAN methodology.
+                </p>
+              </div>
             </div>
-
 
             <div className="terminal-card">
               <p className="text-green-400 font-bold mb-4">[SKILLS]</p>
@@ -69,10 +75,9 @@ export default function Home() {
                 <p>└─ Hardware: ESP32 | Arduino | KiCad</p>
                 <p>└─ Automation: IoT | Apify | Scripting</p>
                 <p>└─ CAD: Fusion 360 | AutoCAD | Mechanical Design</p>
-				<p>└─ Software: MATLAB | C++ | Python</p>
+                <p>└─ Software: MATLAB | C++ | Python</p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -88,9 +93,9 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-2xl font-bold text-green-400">
-                    WIRELESS WIND TUNNEL TURNTABLE
+                    [WIRELESS WIND TUNNEL TURNTABLE]
                   </h4>
-                  <p className="text-green-400/70 text-sm">[MEng Capstone Project]</p>
+                  <p className="text-green-400/70 text-sm">MEng Capstone Project</p>
                 </div>
                 <span className="text-green-400 text-xs font-mono">2025-2026</span>
               </div>
@@ -102,14 +107,30 @@ export default function Home() {
                 positioning.
               </p>
 
-              <div className="code-block text-xs mb-4">
+			<div className="code-block text-xs mb-4">
                 <p><u><b>SYSTEM SPECS</b></u></p>
                 <p className="mt-2">Architecture: Dual ESP32 | Wireless | ESP-NOW</p>
                 <p>Motor: NEMA17 Stepper | CL42T-V41 Driver</p>
                 <p>PCB: Custom KiCad Design | Manufacturing: JLCPCB</p>
                 <p>Firmware: C++ </p>
 				<p>200+ Engineering Hours</p>
-              </div>
+            </div>
+			
+			<div style={{display: 'flex', gap: '10rem'}} className="mb-4 ml-8">		
+			<img src="/pics/cs-cad-render-iso.png" alt="Turntable Engineering Drawing" className="w-8/20 mb-4 border border-green-400" />  
+			<img src="/pics/cs-cad-render-side.png" alt="Turntable Engineering Drawing" className="w-453/1000 mb-4 border border-green-400" />
+			</div>
+			
+			<div className="code-block mb-4">
+                <p><u><b>PERFORMANCE RESULTS</b></u></p>
+                <p className="mt-2">Angular Resolution: 1° ✓ (Target: 1°)</p>
+                <p>Positional Accuracy: validated at ±0.5° (Target: ±0.3° - required higher resolution testing method)</p>
+                <p>Operating Range: 360° ✓ (Target: 360°)</p>
+                <p>Max Speed: 20°/s ✓ (Target: ≤10°/s) [EXCEEDED]</p>
+                <p>Wireless Control: Implemented ✓</p>
+				<p>Oscillation Mode: Implemented ✓</p>
+                <p>Automatic Homing: Implemented ✓</p>
+			</div>
 
               <div className="flex gap-2 flex-wrap mb-4">
                 <span className="border border-green-400 px-3 py-1 text-xs font-mono">ESP32</span>
@@ -194,8 +215,8 @@ export default function Home() {
           <h3 className="section-title">CONTACT</h3>
 
           <div className="code-block mb-8 max-w-2xl mx-auto">
-            <p className="mt-4">Location: Cardiff, Wales</p>
-            <p>Status: SEEKING GRADUATE ROLES</p>
+            <p>Seeking graduate roles in any discipline</p>
+			<p className="mt-4">Location: Cardiff, Wales</p>           
 			<p>Email: george.prior00@gmail.com</p>
 			<p>Phone: +44 7487 598334</p>
 
@@ -203,7 +224,7 @@ export default function Home() {
           </div>
 
           <div className="flex gap-4 justify-center flex-wrap mb-8">
-            <a href="mailto:george.prior00@gmail.com" className="neon-btn-filled">
+            <a href="mailto:george.prior00@gmail.com" target="_blank" rel="noopener noreferrer" className="neon-btn">
               EMAIL
             </a>
             <a href="https://github.com/LeGeoorge" target="_blank" rel="noopener noreferrer" className="neon-btn">
