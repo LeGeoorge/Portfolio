@@ -111,13 +111,6 @@ export default function Home() {
                 <p>Automatic Homing: Implemented ✓</p>
 			</div>
 
-              <div className="flex gap-2 flex-wrap mb-4">
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">ESP32</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">KiCad</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">C++</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">PCB_DESIGN</span>
-              </div>
-
               <a href="https://github.com/LeGeoorge/Wind-Tunnel-Turntable_Project" className="text-green-400 hover:glow text-sm font-mono">
                 [GIT REPO]
               </a>
@@ -127,8 +120,49 @@ export default function Home() {
               </a>
             </div>
 
+            {/* Project 2 - LEAN */}
+            <div className="terminal-card">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-2xl font-bold text-green-400">
+                    [LEAN MANUFACTURING REDESIGN]
+                  </h4>
+                  <p className="text-green-400/70 text-sm">Flyscreen Production Value Stream Analysis</p>
+                </div>
+                <span className="text-green-400 text-xs font-mono">2025</span>
+              </div>
 
-            {/* Project 2 */}
+              <p className="text-green-300 mb-4">
+                Continuous improvement and waste analysis for mixed-model production. Current-state value stream mapping identified bottlenecks (cleaning stage), unevenness (welding unreliability at 75%), and high WIP from batch-push scheduling. Future-state design proposed using SMED, Kanban supermarkets, Heijunka, Poka-Yoke, standard work and visual management to reduce lead times and support product variation.
+              </p>
+
+              <div className="code-block text-xs mb-4">
+                <p><u><b>LEAN TOOLS APPLIED</b></u></p>
+                <p className="mt-2">Value Stream Mapping (Current & Future State)</p>
+                <p>Waste Analysis: Muda, Mura, Muri</p>
+                <p>SMED: Reduce changeover times</p>
+                <p>Kanban Pull System with Supermarkets</p>
+                <p>Heijunka: Level production scheduling</p>
+                <p>Poka-Yoke: Error-proofing mechanisms</p>
+                <p>Jidoka: Built-in quality control</p>
+                <p>Standard Work & Visual Management</p>
+              </div>
+
+              <div className="code-block text-xs mb-4">
+                <p><u><b>KEY OUTCOMES</b></u></p>
+                <p className="mt-2">Designed pull-based system replacing weekly push schedule</p>
+                <p>Recommendations would reduce WIP and improved flow stability</p>
+                <p>Recommedations aimed to help stabilise welding process</p>
+                <p>Future-state design allowed mixed-model production with four product variants</p>
+                <p>Eliminated batch-driven scheduling disruption</p>
+              </div>
+
+              <a href="/Reports/lean-report.pdf" target="_blank" className="text-green-400 hover:glow text-sm font-mono">
+                [FULL REPORT]
+              </a>
+            </div>
+
+            {/* Project 3 */}
             <div className="terminal-card">
               <div className="flex justify-between items-start mb-4">
                 <div>
@@ -157,7 +191,7 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <div className="terminal-card">
               <div className="flex justify-between items-start mb-4">
                 <div>
