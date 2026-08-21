@@ -15,17 +15,22 @@ export default function Home() {
           <p style={{fontSize: '6rem', textAlign: 'center'}} className="text-2xl font-bold text-green-400">GEORGE PRIOR</p>
 
           
-
-          <div className="flex gap-4 justify-center">
-            <a href="#projects" className="neon-btn">
-              VIEW PROJECTS
+		  <div className="flex gap-4 justify-center flex-wrap mb-8">
+            <a href="mailto:george.prior00@gmail.com" target="_blank" rel="noopener noreferrer" className="neon-btn">
+              EMAIL
+            </a>
+			<a href="https://www.linkedin.com/in/02-george-prior/" target="_blank" rel="noopener noreferrer" className="neon-btn">
+              LINKEDIN
             </a>
             <a href="https://github.com/LeGeoorge" target="_blank" rel="noopener noreferrer" className="neon-btn">
               GITHUB
             </a>
+			<a href="#projects" className="neon-btn">
+              VIEW PROJECTS
+            </a>
           </div>
-      </section>
-
+      
+</section>
 {/* About Section */}
       <section id="about" className="py-20 px-4 relative z-10 border-t-2 border-green-400">
         <div className="max-w-6xl mx-auto">
@@ -41,22 +46,15 @@ export default function Home() {
                   <p style={{marginRight: '0.7rem'}}className="text-green-400/70 whitespace-nowrap !text-xs">Graduated June 2026 with merit</p>
                 </div>
                 <p>
-                  Specialization in automation, 
+                  Specialisation in automation, 
                   control systems, and embedded firmware development. Strong background in 
                   aerodynamics, mechanical design and LEAN methodology.
                 </p>
               </div>
             </div>
 
-            <div className="terminal-card">
-              <p className="text-green-400 font-bold mb-4">[SKILLS]</p>
-              <div className="text-green-300 font-mono text-sm space-y-1">
-                <p>└─ Hardware: ESP32 | Arduino | KiCad</p>
-                <p>└─ Automation: IoT | Apify | Scripting</p>
-                <p>└─ CAD: Fusion 360 | AutoCAD | Mechanical Design</p>
-                <p>└─ Software: MATLAB | C++ | Python</p>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </section>
@@ -72,15 +70,15 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-2xl font-bold text-green-400">
-                    [WIRELESS WIND TUNNEL TURNTABLE]
+                    [WIRELESS WIND TUNNEL TURNTABLE 1/4 SCALE PROOF-OF-CONCEPT]
                   </h4>
-                  <p className="text-green-400/70 text-sm">MEng Capstone Project</p>
+                  <p className="text-green-400/70 text-sm"><u>MEng Capstone Project - Individual Report</u></p>
                 </div>
                 <span className="text-green-400 text-xs font-mono">2025-2026</span>
               </div>
 
               <p className="text-green-300 mb-4">
-                ESP32-based yaw control system for aerodynamic testing. Dual microcontroller 
+                ESP32-based yaw and pitch control system for aerodynamic testing. Dual microcontroller 
                 wireless communication (ESP-NOW), custom KiCad PCB, closed-loop stepper motor 
                 control with CL42T-V41 driver. GT2 belt reduction mechanism for precision 
                 positioning.
@@ -125,9 +123,9 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-2xl font-bold text-green-400">
-                    [LEAN MANUFACTURING REDESIGN]
+                    [CONTINUOUS IMPROVEMENT AND WASTE ANALYSIS FOR FLYSCREEN PRODUCTION USING LEAN THINKING]
                   </h4>
-                  <p className="text-green-400/70 text-sm">Flyscreen Production Value Stream Analysis</p>
+                  <p className="text-green-400/70 text-sm"><u>Principles of LEAN Engineering</u></p>
                 </div>
                 <span className="text-green-400 text-xs font-mono">2025</span>
               </div>
@@ -162,61 +160,82 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 3 - Advanced Manufacturing */}
             <div className="terminal-card">
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-2xl font-bold text-green-400">
-                    ROTARY ENCODER SYSTEM
+                    [MANUFACTURING ROUTE ASSESSMENT FOR A LANDING GEAR DOOR HINGE]
                   </h4>
-                  <p className="text-green-400/70 text-sm">[Hobby Electronics]</p>
+                  <p className="text-green-400/70 text-sm"><u>Advanced Manufacturing</u></p>
                 </div>
-                <span className="text-green-400 text-xs font-mono">v2.1</span>
+                <span className="text-green-400 text-xs font-mono">2025</span>
               </div>
 
               <p className="text-green-300 mb-4">
-                Embedded systems project using ESP32 with optical sensors (TCST2103) and 
-                28BYJ-48 stepper motor for precision rotational feedback. Sensor testing 
-                and validation. Upgraded to TCST1103 after fault analysis.
+                Feasibility study comparing conventional CNC machining vs additive manufacturing (AM) for aerospace landing gear door hinge. Evaluated component function, material performance, certification requirements, environmental impact and implementation considerations. Conducted structured SWOT analysis to assess adoption viability for fatigue-loaded aircraft component.
               </p>
 
-              <div className="flex gap-2 flex-wrap mb-4">
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">Embedded</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">Hardware</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">ESP32</span>
+              <div className="code-block text-xs mb-4">
+                <p><u><b>ASSESSMENT SCOPE</b></u></p>
+                <p className="mt-2">Component: Landing Gear Door Hinge (fatigue-loaded)</p>
+                <p>Conventional Route: CNC machining from wrought Al/Steel alloys</p>
+                <p>Alternative Route: Metal additive manufacturing (PBF/DED)</p>
+                <p>Evaluation Criteria: Certification maturity, material performance, cost, sustainability, lead time</p>
               </div>
 
-              <a href="#" className="text-green-400 hover:glow text-sm font-mono">
-                
+              <div className="code-block text-xs mb-4">
+                <p><u><b>KEY FINDINGS</b></u></p>
+                <p className="mt-2">✓ Conventional machining: High certification maturity, predictable fatigue behavior</p>
+                <p>✓ AM advantages: Material efficiency, geometric freedom, weight optimization</p>
+                <p>✗ AM constraints: Fatigue performance variability, extensive qualification (↑cost/time)</p>
+                <p>✗ Hybrid required: Precision machining still needed for critical interfaces</p>
+                <p>Recommendation: Retain machining for mature components; adopt AM for future design iterations</p>
+              </div>
+
+              <a href="/Reports/am-report.pdf" target="_blank" className="text-green-400 hover:glow text-sm font-mono">
+                [FULL REPORT]
               </a>
             </div>
 
-            {/* Project 4 */}
+            {/* Project 4 - Dissertation */}
+                        
             <div className="terminal-card">
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-2xl font-bold text-green-400">
-                    AUTOMATED JOB SEARCH PIPELINE
+                    [LASER METAL DEPOSITION PARAMETER HARDNESS EFFECTS STUDY]
                   </h4>
-                  <p className="text-green-400/70 text-sm">[Automation Tool]</p>
+                  <p className="text-green-400/70 text-sm"><u>Year 3 Dissertation</u></p>
                 </div>
-                <span className="text-green-400 text-xs font-mono">PROD</span>
+                <span className="text-green-400 text-xs font-mono">2025</span>
               </div>
 
               <p className="text-green-300 mb-4">
-                Automated LinkedIn job scraper using Apify. AI-based fit scoring with 
-                Claude integration. Results exported to ranked Excel sheets. Filters 
-                Cardiff-area graduate roles. Optimized for single-run efficiency to 
-                minimize API credits.
+                Experimental investigation of laser metal deposition (LMD) on nickel-based IN718 superalloy. Designed and executed factorial experiments using Taguchi L12 array to evaluate six process parameters (laser power, powder flow, nozzle flow, step spacing, feed rate, specific energy) and their effects on deposit hardness using Vickers microhardness testing.
               </p>
 
-              <div className="flex gap-2 flex-wrap mb-4">
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">Automation</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">Python</span>
-                <span className="border border-green-400 px-3 py-1 text-xs font-mono">Apify</span>
+              <div className="code-block text-xs mb-4">
+                <p><u><b>EXPERIMENTAL APPROACH</b></u></p>
+                <p className="mt-2">Material: IN718 Nickel Superalloy</p>
+                <p>Test Method: Vickers Microhardness (HV3) per ISO 6507-1:2023</p>
+                <p>Design: Taguchi L12 Orthogonal Array (12 samples, 6 parameters)</p>
+                <p>Analysis: ANOVA, 95% confidence intervals, spatial contour mapping</p>
+                <p>Total Indentations: 772 across 12 samples</p>
               </div>
 
-            
+              <div className="code-block text-xs mb-4">
+                <p><u><b>KEY FINDINGS</b></u></p>
+                <p className="mt-2">Deposit Hardness: 258-277 HV (mean 266.5 HV)</p>
+                <p>Substrate Hardness: 601-634 HV (mean 621.5 HV)</p>
+                <p>Significant Parameters: Specific energy, powder flow rate, nozzle flow rate (p &lt; 0.05)</p>
+                <p>Spatial Variation: Hardness distribution mapped via MATLAB contour analysis</p>
+                <p>Parameter Interactions: Modified Taguchi design enabled identification despite confounding parameters</p>
+              </div>
+
+              <a href="/Reports/diss.pdf" target="_blank" className="text-green-400 hover:glow text-sm font-mono">
+                [FULL DISSERTATION]
+              </a>
             </div>
           </div>
         </div>
@@ -228,9 +247,10 @@ export default function Home() {
           <h3 className="section-title">CONTACT</h3>
 
           <div className="code-block mb-8 max-w-2xl mx-auto">
-            <p>Seeking graduate roles in any Engineering discipline</p>
-			<p className="mt-4">Location: Cardiff, Wales</p>           
+            <p>Seeking graduate roles in any engineering discipline</p>
+			<p className="mt-4">Currently located in Cardiff, open to relocation</p>           
 			<p>Email: george.prior00@gmail.com</p>
+			<p style={{paddingRight: '2.65rem'}}>Secondary: georgeprior02@gmail.com</p>
 			<p>Phone: +44 7487 598334</p>
 
   
@@ -240,11 +260,11 @@ export default function Home() {
             <a href="mailto:george.prior00@gmail.com" target="_blank" rel="noopener noreferrer" className="neon-btn">
               EMAIL
             </a>
+			<a href="https://www.linkedin.com/in/02-george-prior/" target="_blank" rel="noopener noreferrer" className="neon-btn">
+              LINKEDIN
+            </a>
             <a href="https://github.com/LeGeoorge" target="_blank" rel="noopener noreferrer" className="neon-btn">
               GITHUB
-            </a>
-            <a href="https://www.linkedin.com/in/02-george-prior/" target="_blank" rel="noopener noreferrer" className="neon-btn">
-              LINKEDIN
             </a>
           </div>
 
